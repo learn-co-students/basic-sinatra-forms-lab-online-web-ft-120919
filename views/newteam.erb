@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
  <head>
+ <style>
+   body {
+      font-size: 12px;
+      color: red;
+   }
+   form {
+      align: right;
+   }
+ </style>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
  </head>
  <body>
+    <form method= POST action = "/team">
+    Team Name:<input type="text" name="name" id=""><br>
+    Coach:<input type = "text" name = "coach"><br>
+    Point Guard: <input type="text" name = "pg"><br>
+    Shooting Guard: <input type="text" name = "sg"><br>
+    Power Forward: <input type="text" name="pf"><br>
+    Small Forward: <input type="text" name="sf"><br>
+    Center: <input type="text" name="c"><br>
+    <input type="submit" id="Submit"><br>
+    </form>
  </body>
 </html>
 
