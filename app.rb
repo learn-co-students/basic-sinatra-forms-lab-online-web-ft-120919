@@ -7,14 +7,15 @@ get '/newteam' do
 end
 
   post '/team' do
+    
     @name = params["name"]
     @coach = params["coach"]
-    @Point Guard = params["point guard"]
-    @Shooting Guard = params["shooting guard"]
-    @Small Forward = params["small forward"]
-    @Power Forward = params["power forward"]
-    @center = params["center"]
-
+    @point_guard = params["pg"]
+    @shooting_guard = params["sg"]
+    @small_forward = params["sf"]
+    @power_forward = params["pf"]
+    @center = params["c"]
+    #binding.pry
     erb :team
   end
 end
